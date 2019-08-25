@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.employeeapi.utilities.Listeners" />
+    </listeners>
+    <test verbose="2" preserve-order="true" name="E:\Selenium\E2EAPITesting">
+        <classes>
+            <class name="com.employeeapi.testcases.Get_All_Employees"/>
+            <class name="com.employeeapi.testcases.Get_Single_Employee_Record"/>
+            <class name="com.employeeapi.testcases.Post_Employee_Record"/>
+            <class name="com.employeeapi.testcases.Put_Employee_Record"/>
+            <class name="com.employeeapi.testcases.Delete_Employee_Record"/>
+        </classes>
+    </test>
+</suite>

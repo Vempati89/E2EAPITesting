@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="E2EAPITesting(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.Get_Single_Employee_Record">
+        <methods>
+          <include name="setup"/>
+          <include name="CheckServerType"/>
+          <include name="getEmployeeData"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.Get_Single_Employee_Record -->
+    </classes>
+  </test> <!-- E2EAPITesting(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

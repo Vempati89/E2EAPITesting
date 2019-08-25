@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 28, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 35.545 s <<< FAILURE! - in TestSuite
+CheckResponseTime(com.employeeapi.testcases.Get_All_Employees)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testcases.Get_All_Employees.CheckResponseTime(Get_All_Employees.java:50)
+
+CheckServerType(com.employeeapi.testcases.Get_All_Employees)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [Apache]
+	at com.employeeapi.testcases.Get_All_Employees.CheckServerType(Get_All_Employees.java:74)
+
+CheckResponseBody(com.employeeapi.testcases.Get_Single_Employee_Record)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testcases.Get_Single_Employee_Record.CheckResponseBody(Get_Single_Employee_Record.java:26)
+
+CheckServerType(com.employeeapi.testcases.Get_Single_Employee_Record)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.14.1] but found [Apache]
+	at com.employeeapi.testcases.Get_Single_Employee_Record.CheckServerType(Get_Single_Employee_Record.java:66)
+
+CheckResponseBody(com.employeeapi.testcases.Post_Employee_Record)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testcases.Post_Employee_Record.CheckResponseBody(Post_Employee_Record.java:41)
+

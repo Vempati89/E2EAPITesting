@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="E:\Selenium\E2EAPITesting(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.Get_Single_Employee_Record">
+        <methods>
+          <include name="CheckResponseBody"/>
+          <include name="setup"/>
+          <include name="CheckServerType"/>
+          <include name="getEmployeeData"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.Get_Single_Employee_Record -->
+      <class name="com.employeeapi.testcases.Get_All_Employees">
+        <methods>
+          <include name="teardown"/>
+          <include name="getAllEmployees"/>
+          <include name="setup"/>
+          <include name="CheckServerType"/>
+          <include name="CheckResponseTime"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.Get_All_Employees -->
+      <class name="com.employeeapi.testcases.Post_Employee_Record">
+        <methods>
+          <include name="CheckResponseBody"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="CreateEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.Post_Employee_Record -->
+    </classes>
+  </test> <!-- E:\Selenium\E2EAPITesting(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
